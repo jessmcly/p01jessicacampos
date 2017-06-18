@@ -1,0 +1,67 @@
+<?php
+//Variavel com caminho base até ao tema ex: 'localhost:8888/wordpress%202/wp-content/themes/kayosushi'
+$urlBase = esc_url( get_template_directory_uri() );
+
+?>
+    <!DOCTYPE HTML>
+    <html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Galery</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> </head>
+
+    <body>
+        <div class="col">
+            <header>
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+                <a href="<?=$urlBase?>/index.html">
+                    <div class="menu home">Home</div>
+                </a>
+                <a href="<?=$urlBase?>/menu.html">
+                    <div class="menu carta">Menu</div>
+                </a>
+                <a href="<?=$urlBase?>/fotos.html">
+                    <div class="menu fotos">Fotos</div>
+                </a>
+                <a href="<?=$urlBase?>/contatos.html">
+                    <div class="menu contatos">Contatos</div>
+                </a>
+            </header>
+            <div class="toolbar mb2 mt2">
+                <button class="btn btngaler" href="" data-rel="all">All</button>
+                <button class="btn btngaler" data-rel="food">Food</button>
+                <button class="btn btngaler" data-rel="espaco">Local</button>
+                <button class="btn btngaler" data-rel="clientes">Costumers</button>
+            </div>
+            <div id="<?=$urlBase?>/galeria">
+                <div class="fotog size food all"> <img src="imagens/food/12194597_985273968185440_1853914931396910577_o.jpg" alt="" /> </div>
+                <div class="fotog size clientes all"> <img src="imagens/client/14459031_1112757432137844_57175846_n.jpg" alt="" /> </div>
+                <div class="fotog size food all"> <img src="imagens/food/14062016-DSC_3132.jpg" alt="" /> </div>
+                <div class="fotog size food all"> <img src="imagens/food/26012016-DSC_2821.jpg" alt="" /> </div>
+                <div class="fotog size espaco all"> <img src="imagens/local/19012016-DSC_2699.jpg" alt="" /> </div>
+                <div class="fotog size clientes all"> <img src="imagens/client/14470430_1216090871770414_6965754399746016824_n.jpg" alt="" /> </div>
+                <div class="fotog size espaco all"> <img src="imagens/local/26052016-DSC_3097-2.jpg" alt="" /> </div>
+                <div class="fotog size espaco all"> <img src="imagens/local/26052016-DSC_3101.jpg" alt="" /> </div>
+                <div class="fotog size food all"> <img src="imagens/food/DSC_2681.jpg" alt="" /> </div>
+                <div class="fotog size espaco all"> <img src="imagens/local/30062016-IMG_4606.jpg" alt="" /> </div>
+                <div class="fotog size food all"> <img src="imagens/food/DSC_2908.jpg" alt="" /> </div>
+                <div class="fotog size clientes all"> <img src="imagens/client/26052016-DSC_3092.jpg" alt="" /> </div>
+                <div class="fotog size food all"> <img src="imagens/food/DSC_2908.jpg" alt="" /> </div>
+                <div class="fotog size clientes all"> <img src="imagens/client/26092016-IMG_9515.jpg" alt="" /> </div>
+                <div class="fotog size food all"> <img src="imagens/food/SAM_2775.JPG" alt="" /> </div>
+                <div class="fotog size food all"> <img src="imagens/food/SAM_2783.JPG" alt="" /> </div>
+                <div class="fotog size clientes all"> <img src="imagens/client/28012016-12498660_986116981457293_458618817_n.jpg" alt="" /> </div>
+                <div class="fotog size clientes all"> <img src="imagens/client/26092016-IMG_9515.jpg" alt="" /> </div>
+            </div>
+            <div style="clear:both;"></div>
+            <footer> &copy;Restaurante Kayo Sushi 2017 </footer>
+        </div>
+    </body>
+
+    </html>

@@ -1,0 +1,620 @@
+/*START TYPE*/
+
+body {
+    font-family: didot;
+}
+
+p {
+    text-align: center;
+    font-family: didot-italic;
+    color: black;
+    font-size: 16pt;
+}
+
+h1 {
+    font-family: didot-italic;
+    font-size: 16pt;
+    text-align: center;
+    color: #000;
+}
+
+h2 {
+    font-family: didot;
+    font-size: 12pt;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: didot;
+    font-size: 11pt;
+    text-align: center;
+    color: black;
+}
+
+
+/*FINAL TYPE*/
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #000;
+}
+
+.col {
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    animation-name: slideInDown;
+    animation-duration: 1.5s;
+}
+
+.logo {
+    width: 300px;
+    height: 70%;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 20px;
+    left: 38%;
+    background-image: url(imagens/LOGO.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.menu {
+    width: 100px;
+    height: 20px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    float: left;
+    left: 30%;
+    background-color: #FCD2A0;
+}
+
+.menu:hover {
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    background-color: #000;
+    color: #FCD2A0;
+    transform: scale(1.3);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.menuimag {
+    background-image: url(imagens/local/30062016-IMG_4607.jpg);
+    width: 100%;
+    height: 280px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.caixamenus {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    margin-top: 40px;
+    background-color: #000;
+    position: relative;
+    float: left;
+    left: 18%;
+    padding: 40px;
+    color: #FCD2A0;
+    text-align: center;
+    font-size: 14pt;
+    font-family: didot;
+    cursor: pointer;
+}
+
+.caixamenus:hover {
+    background-color: #FCD2A0;
+}
+
+.texto:hover {
+    color: #000;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    background-color: #000;
+    font-family: didot-italic;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    font-size: 10pt;
+    animation-name: slideInDown2;
+    animation-duration: 1.5s;
+}
+
+/*
+.pop {
+    position: relative;
+    z-index: 200;
+    background-color: #FCD2A0;
+    left: 36%;
+    bottom: 1000%;
+    width: 500px;
+    height: 650px;
+    display: none;
+}
+*/
+
+.pop {
+    top:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.fundopop {
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+}
+
+.conteudopop {
+    background-color: #FCD2A0;
+    opacity: 1;
+    width: 500px;
+    height: 650px;
+    margin-top: 50px;
+    
+}
+
+.fecharpop {
+    float:right;    
+    color: black;
+    background-color: #FCD2A0;
+    border-style: none;
+    font-size: 12pt;
+    cursor: pointer;
+}
+/*
+.fecharpop {
+    position: absolute;
+    bottom: 94.5%;
+    right: 2%;
+    color: black;
+    background-color: #FCD2A0;
+    border-style: none;
+    font-size: 12pt;
+}
+*/
+
+#galeria {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    -webkit-column-width: 33.33333333333333%;
+    -moz-column-width: 33.33333333333333%;
+    column-width: 33.33333333333333%;
+}
+
+.fotog {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.fotog:hover {}
+
+.size {
+    transform: scale(1);
+}
+
+slidp {
+    padding: 10px;
+    border-bottom: 1px #ccc dotted;
+    text-decoration: none;
+    font-family: lato;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #333;
+    display: block;
+    float: left;
+}
+
+slidp:hover {
+    cursor: pointer;
+    background: #333;
+    color: #eee;
+}
+
+.fotog img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    font-family: didot;
+    font-size: 12pt;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    border: none;
+    color: #555;
+    background-color: #FCD2A0;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: none;
+    border-color: var(--darken-2);
+    box-shadow: 0 0 0 3px var(--darken-3);
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+form {
+    background-color: #FCD2A0;
+    width: 700px;
+    height: 530px;
+    position: relative;
+    left: 19%;
+    padding: 2px;
+}
+
+.box1 {
+    width: 580px;
+    position: relative;
+    left: 8%;
+    padding-top: 10px;
+}
+
+.box2 {
+    width: 580px;
+    position: relative;
+    position: relative;
+    left: 8%;
+}
+
+.box {
+    width: 150px;
+    height: 30px;
+    font-family: didot;
+    font-size: 10pt;
+    padding: 10px;
+    border: none;
+    border-color: #999;
+    margin: 10px;
+}
+
+.box:hover {
+    background-color: #e6e6e6;
+}
+
+.box3 {
+    width: 540px;
+    height: 100px;
+}
+
+#input-submit {
+    width: 100px;
+    padding: 10px;
+    background-color: #000;
+    font-size: 10pt;
+    position: relative;
+    left: 40%;
+    font-family: didot;
+    color: #FCD2A0;
+    border: 1px solid;
+    border-color: #999;
+}
+
+#input-submit:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.maps {
+    width: 704px;
+    height: 200px;
+    position: relative;
+    left: 19%;
+    border: none;
+}
+
+
+/** ANIMAÇÕES **/
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInDown2 {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/*START MEDIA QUERIES*/
+
+@media only screen and (max-width: 1200px) {
+    .col {
+        margin-top: 0px;
+        padding: 0px 0px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 12pt;
+    }
+    h2 {
+        font-size: 10pt;
+    }
+    header {
+        height: 170px;
+    }
+    .logo {
+        width: 200px;
+        height: 110px;
+        position: relative;
+        left: 38%;
+    }
+    .menu {
+        width: 100px;
+        height: 20px;
+        color: #000;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        float: left;
+        left: 20%;
+    }
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+    .menuimag {
+        height: 200px;
+    }
+    .caixamenus {
+        width: 150px;
+        height: 30px;
+        margin: 10px;
+        background-color: #000;
+        position: relative;
+        left: 5%;
+        margin-top: 35px;
+        color: #FCD2A0;
+        text-align: center;
+        font-size: 14pt;
+        font-family: didot;
+        cursor: pointer;
+    }
+    #galeria {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 5px;
+        -moz-column-gap: 5px;
+        column-gap: 5px;
+        -webkit-column-width: 33.33333333333333%;
+        -moz-column-width: 33.33333333333333%;
+        column-width: 33.33333333333333%;
+    }
+    .maps {
+        width: 800px;
+        height: 250px;
+        position: none;
+        left: 0%;
+    }
+    form {
+        background-color: #FCD2A0;
+        width: 800px;
+        height: 550px;
+        padding: 2px;
+        position: none;
+        left: 0%;
+    }
+    .box1 {
+        width: 350px;
+        padding-top: 10px;
+        left: 30%;
+    }
+    .box2 {
+        width: 350px;
+        position: relative;
+        left: 30%;
+    }
+    .box {
+        width: 350px;
+        height: 30px;
+        font-family: didot;
+        font-size: 10pt;
+        padding: 10px;
+        border: none;
+        border-color: #999;
+        margin: 10px;
+    }
+    #input-submit {
+        width: 100px;
+        font-size: 10pt;
+        position: relative;
+        left: 49%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 12pt;
+    }
+    h2 {
+        font-size: 10pt;
+    }
+    header {
+        height: 150px;
+    }
+    .logo {
+        width: 200px;
+        height: 110px;
+        position: relative;
+        left: 25%;
+    }
+    .menu {
+        width: 80px;
+        height: 20px;
+        color: #000;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        float: left;
+        left: 0;
+    }
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+    .menuimag {
+        height: 450px;
+        background-image: url(imagens/food/12194597_985273968185440_1853914931396910577_o.jpg);
+        background-size: 110%;
+    }
+    .caixamenus {
+        width: 300px;
+        height: 30px;
+        margin: 10px;
+        top: 15%;
+        position: relative;
+        float: none;
+        left: 0%;
+        color: #FCD2A0;
+        text-align: center;
+        font-size: 14pt;
+        font-family: didot;
+    }
+    #galeria {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-gap: 5px;
+        -moz-column-gap: 5px;
+        column-gap: 5px;
+        -webkit-column-width: 33.33333333333333%;
+        -moz-column-width: 33.33333333333333%;
+        column-width: 33.33333333333333%;
+    }
+    .btn {
+        color: #FCD2A0;
+        background-color: #000;
+    }
+    .maps {
+        width: 400px;
+        height: 150px;
+        position: none;
+        left: 0%;
+    }
+    form {
+        background-color: #FCD2A0;
+        width: 400px;
+        height: 600px;
+        padding: 2px;
+        position: none;
+        left: 0%;
+    }
+    .box1 {
+        width: 300px;
+        padding-top: 10px;
+        left: 18%;
+    }
+    .box2 {
+        width: 300px;
+        position: relative;
+        left: 18%;
+    }
+    .box {
+        width: 220px;
+        height: 30px;
+        font-family: didot;
+        font-size: 10pt;
+        padding: 10px;
+        border: none;
+        border-color: #999;
+        margin: 10px;
+    }
+    .box:hover {
+        background-color: #e6e6e6;
+    }
+    .box3 {
+        width: 220px;
+        height: 100px;
+    }
+    #input-submit {
+        width: 100px;
+        font-size: 10pt;
+        position: relative;
+        left: 38%;
+    }
+}
